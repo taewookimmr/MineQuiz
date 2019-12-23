@@ -12,8 +12,9 @@ def solution(src):
         src = [src[j] for j in range(preslength) if j not in indexlist]    
         if len(indexlist) == 0:
             break
-    print("".join([str(e) for e in src]))
-            
+    print("".join([str(e) for e in src])) # 숫자 리스트를 다시 문자열로 변환
+    
+    
 solution("113794") 
 
 

@@ -11,3 +11,19 @@
 이러한 문제를 해결하는 일반화된 프로그램을 작성하여라
 입력은 숫자로만 구성된 문자열이다.
 ```
+
+## plausible soluton?
+```python
+def solution(src):
+    src = [int(e) for e in src] # 문자열을 숫자 리스트로 변환
+    while True:
+        indexlist = []
+        for i in range(len(src)-1):
+            if int(src[i])+int(src[i+1]) == 10:
+                if i not in indexlist : indexlist += [i, i+1]                 
+        src = [src[j] for j in range(preslength) if j not in indexlist]    
+        if len(indexlist) == 0:
+            break
+    print("".join([str(e) for e in src])) # 숫자 리스트를 다시 문자열로 변환
+solution("113794") 
+```
