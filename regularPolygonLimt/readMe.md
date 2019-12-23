@@ -1,4 +1,4 @@
-# nPolygonal
+# regularPolygonalLimit
 
 ## problem definition
 
