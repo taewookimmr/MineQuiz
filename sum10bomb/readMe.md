@@ -12,7 +12,7 @@
 입력은 숫자로만 구성된 문자열이다.
 ```
 
-## plausible soluton?
+## plausible solution?
 ```python
 def solution(src):
     src = [int(e) for e in src] # 문자열을 숫자 리스트로 변환
