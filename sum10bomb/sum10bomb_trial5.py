@@ -17,7 +17,6 @@ def solution(src):
         else :
             print("".join([str(e) for e in stack]))           
             break
-    
 solution("113794") 
 
 
